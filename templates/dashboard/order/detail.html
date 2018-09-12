@@ -626,7 +626,7 @@
         {% for event in events %}
           <li class="event" data-date="{{ event.date }}">
             <div class="content">
-              {{ event.get_event_display|default:"" }}{% if event.user %} by {{ event.user }}{% endif %}
+              {{ event.get_event_display|default:"" }}
             </div>
           </li>
         {% endfor %}
