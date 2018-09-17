@@ -45,7 +45,7 @@ export const OrderDetails: React.StatelessComponent<OrderDetailsProps> = ({
               return (
                 <UserContext.Consumer>
                   {({ user }) => (
-                    <TypedOrderCancelMutation variables={{ id }}>
+                    <TypedOrderCancelMutation >
                       {cancelOrder => (
                         <TypedOrderReleaseMutation variables={{ id }}>
                           {releasePayment => (
