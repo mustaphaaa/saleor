@@ -68,7 +68,7 @@ class CustomerCreate(ModelMutation):
 
     class Meta:
         description = 'Creates a new customer.'
-        exclude = ['password']
+        exclude = ['password', 'groups']
         model = models.User
 
     @classmethod
